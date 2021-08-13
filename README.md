@@ -13,4 +13,4 @@ Successfully added:
 ![Screenshot](./images/DevPersonnel/successfullyAdded.png)
 
 getpersons screenshot:
-![Screenshot](./images/DevPersonnel/images/getpersons.png)
+![Screenshot](./images/DevPersonnel/getpersons.png)
