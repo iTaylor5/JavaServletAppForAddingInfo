@@ -10,13 +10,13 @@ The WelcomeServlet class which extends HttpServlet offers the homepage.
 
 Input form:
 
-![Screenshot](images/inputScreen.png)
+![Screenshot](../images/DevPersonnel/inputScreen.png)
 
 Successfully added:
-![Screenshot](images/successfullyAdded.png)
+![Screenshot](../images/DevPersonnel/successfullyAdded.png)
 
 getpersons screenshot:
-![Screenshot](images/getpersons.png)
+![Screenshot](../images/DevPersonnel/getpersons.png)
 
 
 
