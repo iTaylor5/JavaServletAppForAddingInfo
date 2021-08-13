@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE web-app
+    PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+    "http://java.sun.com/dtd/web-app_2_3.dtd">
+<web-app>
+  <display-name>Products Servlet</display-name>
+  <description>Add and View Products</description>
+  
+  <servlet>
+    <servlet-name>newPerson</servlet-name>
+    <servlet-class>addPersonnel.NewPerson</servlet-class>
+      <load-on-startup>1</load-on-startup>
+  </servlet>
+
+  <servlet>
+    <servlet-name>GetPerson</servlet-name>
+    <servlet-class>addPersonnel.GetPerson</servlet-class>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+
+  <servlet>
+    <servlet-name>WelcomeServlet</servlet-name>
+    <servlet-class>addPersonnel.WelcomeServlet</servlet-class>
+    <init-param>
+      <param-name>personsList</param-name>
+      <param-value>/resources/data.json</param-value>
+    </init-param>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>newPerson</servlet-name>
+    <url-pattern>/newperson</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>GetPerson</servlet-name>
+    <url-pattern>/getpersons</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>WelcomeServlet</servlet-name>
+    <url-pattern>/</url-pattern>
+  </servlet-mapping>
+
+<!--  <welcome-file-list>-->
+<!--    <welcome-file>lab1.html</welcome-file>-->
+<!--  </welcome-file-list>-->
+
+</web-app>

@@ -1,0 +1,31 @@
+[
+  {
+    "fistname": "Sarah",
+    "lastname": "Taylor",
+    "Programming Languages": [
+      "Java",
+      "Python"
+    ],
+    "days": [
+      "Monday",
+      "Wednesday"
+    ],
+    "favorite movies": [
+      "Inception"
+    ]
+  },
+  {
+    "fistname": "Ian",
+    "lastname": "Taylor",
+    "Programming Languages": [
+      "Java"
+    ],
+    "days": [
+      "Monday",
+      "Friday"
+    ],
+    "favorite movies": [
+      "Inception"
+    ]
+  }
+]
