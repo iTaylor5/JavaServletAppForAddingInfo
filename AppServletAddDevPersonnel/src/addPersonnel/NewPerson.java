@@ -17,6 +17,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.PrintWriter;
+import java.net.URLEncoder;
 import java.util.*;
 
 public class NewPerson extends HttpServlet{
@@ -95,8 +96,11 @@ public class NewPerson extends HttpServlet{
 
         //Creating two cookies
         try {
-            Cookie c1 = new Cookie("Lab1cookie_firstName",firstName);
-            Cookie c2 = new Cookie("Lab1cookie_lastName",lastName);
+            Cookie c1 = new Cookie( "Lab1cookie_firstName", URLEncoder.encode( firstName, "UTF-8" ) );
+            Cookie c2 = new Cookie( "Lab1cookie_lastName", URLEncoder.encode( lastName, "UTF-8" ) );
+
+//            Cookie c1 = new Cookie("Lab1cookie_firstName",firstName);
+//            Cookie c2 = new Cookie("Lab1cookie_lastName",lastName);
             res.addCookie(c1);
             res.addCookie(c2);
 
@@ -105,6 +109,11 @@ public class NewPerson extends HttpServlet{
         }
         out.print(sb.toString());
     }
+//    private static void setCookie( HttpServletResponse response, String nom, String valeur, int maxAge )throws IOException {
+//        Cookie cookie = new Cookie( nom, URLEncoder.encode( valeur, "UTF-8" ) );
+//        cookie.setMaxAge( maxAge );
+//        response.addCookie( cookie );
+//    }
 
     public void doPut(HttpServletRequest req, HttpServletResponse res)
             throws ServletException, IOException {
